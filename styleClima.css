@@ -1,0 +1,32 @@
+body{
+ background-color: rgb(43, 41, 41);   
+}
+.card{
+    width: 90%;
+    max-width: 400px;
+    margin : 50px auto 0;
+    border :20px;
+    padding: 40px 35px;
+    text-align: center;
+    background-color: rgb(102, 102, 220);
+
+}
+.searchBar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.searchBar input {
+    border : none;
+    outline: none;
+    background-color: antiquewhite;
+    color: grey;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px ;
+    font-size: 18px;
+}

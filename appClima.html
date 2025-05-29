@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicacion del Clima</title>
+    <link rel="stylesheet" href="styleClima.css">
+    <script src="appClima.js"></script>
+</head>
+<body>
+    <div class="card">
+        <div class="searchBar">
+            <input type="text" id="cityInput" placeholder="Ingrese el nombre de la ciudad...">
+            <button id="botonBusqueda"><img src="images/search.png" alt="" id="iconoBusqueda"></button>
+        </div>
+        <div class="clima">
+            <img src="images/rain.png" alt="" id="iconoClima">
+            <h1 class="temp">23 C°</h1>
+            <h2 class="ciudad">Buenos Aires</h2>
+            <div class="detalles">
+                <div class="humedad"><img src ="images/humidity.png">
+                <div> 
+                    <p>Humedad</p>
+                    <p class="humedadValor">60%</p>
+                </div>
+             </div>
+                <div class="viento">
+                    <img src="images/wind.png" alt="">
+                    <div>
+                        <p>Viento</p>
+                        <p class="vientoValor">15 km/h</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
