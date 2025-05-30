@@ -122,6 +122,6 @@ window.addEventListener('DOMContentLoaded', () => {
         // Si el navegador no soporta geolocalización, muestra un mensaje de alerta
         alert('La geolocalización no está soportada por este navegador.');
     }
-});
+}); // hola
 
 
