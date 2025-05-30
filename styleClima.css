@@ -1,32 +1,151 @@
-body{
- background-color: rgb(43, 41, 41);   
+/* Estilo general del cuerpo de la página */
+body {
+    background-color: rgb(43, 41, 41);
+    /* Fondo oscuro para toda la página */
 }
-.card{
+
+/* Contenedor principal de la tarjeta del clima */
+.card {
     width: 90%;
+    /* Ocupa el 90% del ancho de la pantalla */
     max-width: 400px;
-    margin : 50px auto 0;
-    border :20px;
+    /* Máximo ancho de la tarjeta */
+    margin: 50px auto 0;
+    /* Centra la tarjeta y agrega margen superior */
+    border: 20px;
+    /* (Nota: no se especifica tipo/color de borde) */
     padding: 40px 35px;
+    /* Espaciado interno de la tarjeta */
     text-align: center;
-    background-color: rgb(102, 102, 220);
-
+    /* Centra el texto dentro de la tarjeta */
+    background-color: rgb(222, 16, 140);
+    /* Color de fondo de la tarjeta */
 }
-.searchBar{
+
+/* Barra de búsqueda: contiene el input y el botón */
+.searchBar {
     width: 100%;
+    /* Ocupa todo el ancho disponible */
     display: flex;
+    /* Usa flexbox para alinear elementos */
     align-items: center;
+    /* Centra verticalmente los elementos */
     justify-content: center;
-
+    /* Centra horizontalmente los elementos */
 }
+
+/* Estilo del campo de texto de la barra de búsqueda */
 .searchBar input {
-    border : none;
+    border: none;
+    /* Sin borde */
     outline: none;
+    /* Sin contorno al hacer foco */
     background-color: antiquewhite;
+    /* Fondo claro para el input */
     color: grey;
+    /* Color del texto */
     padding: 10px 25px;
-    height: 60px;
+    /* Espaciado interno */
+    height: 40px;
+    /* Altura del input */
     border-radius: 30px;
+    /* Bordes redondeados */
     flex: 1;
-    margin-right: 16px ;
+    /* El input ocupa todo el espacio disponible */
+    margin-right: 16px;
+    /* Espacio a la derecha del input */
     font-size: 18px;
+    /* Tamaño de fuente */
+}
+
+.searchBar button {
+    border: none;
+    /* Sin borde */
+    outline: none;
+    /* Sin contorno al hacer foco */
+    background-color: antiquewhite;
+    /* Fondo claro para el botón */
+    border-radius: 50%;
+    /* Bordes redondeados */
+    width: 60px;
+    /* Ancho del botón */
+    height: 60px;
+    /* Altura del botón */
+    cursor: pointer;
+    /* Cambia el cursor al pasar sobre el botón */
+}
+
+.searchBar button img {
+    width: 16px;
+}
+
+.iconoClima {
+    width: 170px;
+    /* Ancho de los iconos del clima */
+    margin-top: 30px;
+}
+
+.clima h1 {
+    font-size: 80px;
+    /* Tamaño de fuente del título */
+    font-weight: 500;
+    /* Margen superior del título */
+}
+
+.clima h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* Fuente del subtítulo */
+    font-size: 40px;
+    /* Tamaño de fuente del subtítulo */
+    font-weight: 500;
+    /* Peso de la fuente */
+    margin-top: -10px;
+    /* Margen negativo para ajustar la posición */
+    color: red;
+}
+
+.detalles {
+    display: flex;
+    /* Usa flexbox para alinear los detalles */
+    justify-content: space-between;
+    /* Espacio entre los elementos */
+    align-items: center;
+    /* Centra verticalmente los elementos */
+    padding: 0 20px;
+    /* Espaciado interno */
+    margin-top: 50px;
+    /* Margen superior para separar de otros elementos */
+}
+
+.col {
+    display: flex;
+    /* Usa flexbox para alinear los elementos */
+    align-items: center;
+    /* Centra horizontalmente los elementos */
+    text-align: left;
+}
+
+.col img {
+    width: 70px;
+    /* Ancho del icono de humedad */
+    margin-right: 10px;
+    /* Espacio a la derecha del icono */
+}
+
+.vientoValor {
+    font-size: 30px;
+    /* Tamaño de fuente del valor del viento */
+    margin-top: -10px;
+    /* Margen negativo para ajustar la posición */
+}
+
+.humedadValor {
+    font-size: 30px;
+    /* Tamaño de fuente del valor del viento */
+    margin-top: -10px;
+    /* Margen negativo para ajustar la posición */
+}
+
+.clima {
+    display: none;
 }

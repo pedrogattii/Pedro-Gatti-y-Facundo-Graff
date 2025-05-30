@@ -1,38 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
+    <!-- Metadatos básicos de la página -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aplicacion del Clima</title>
+    <!-- Enlace al archivo de estilos CSS externo -->
     <link rel="stylesheet" href="styleClima.css">
-    <script src="appClima.js"></script>
+    <!-- Enlace al archivo JavaScript externo que contiene la lógica de la app -->
+    
 </head>
 <body>
+    <!-- Contenedor principal de la tarjeta del clima -->
     <div class="card">
+        <!-- Barra de búsqueda para ingresar el nombre de la ciudad -->
         <div class="searchBar">
+            <!-- Campo de texto donde el usuario escribe la ciudad -->
             <input type="text" id="cityInput" placeholder="Ingrese el nombre de la ciudad...">
-            <button id="botonBusqueda"><img src="images/search.png" alt="" id="iconoBusqueda"></button>
+            <!-- Botón de búsqueda con ícono de lupa -->
+            <button id="botonBusqueda">
+                <img src="images/search.png" alt="" id="iconoBusqueda">
+            </button>
         </div>
+        <!-- Sección que muestra la información del clima -->
         <div class="clima">
-            <img src="images/rain.png" alt="" id="iconoClima">
+            <!-- Imagen representativa del clima actual (ejemplo: lluvia) -->
+            <img src="images/rain.png" alt="" class="iconoClima">
+            <!-- Temperatura actual -->
             <h1 class="temp">23 C°</h1>
+            <!-- Nombre de la ciudad actual -->
             <h2 class="ciudad">Buenos Aires</h2>
+            <!-- Detalles adicionales del clima -->
             <div class="detalles">
-                <div class="humedad"><img src ="images/humidity.png">
-                <div> 
-                    <p>Humedad</p>
-                    <p class="humedadValor">60%</p>
+                <!-- Sección de humedad -->
+                <div class="col">
+                    <img src ="images/humidity.png">
+                    <div> 
+                        <p class="humedad">Humedad</p>
+                        <!-- Valor de la humedad -->
+                        <p class="humedadValor">60%</p>
+                    </div>
                 </div>
-             </div>
-                <div class="viento">
+                <!-- Sección de viento -->
+                <div class="col">
                     <img src="images/wind.png" alt="">
                     <div>
-                        <p>Viento</p>
+                        <p class="viento">Viento</p>
+                        <!-- Valor de la velocidad del viento -->
                         <p class="vientoValor">15 km/h</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+
+
+<script src="appClima.js"></script>
 </body>
 </html>
