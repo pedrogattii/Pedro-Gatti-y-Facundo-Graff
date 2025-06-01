@@ -18,8 +18,9 @@ body {
     /* Espaciado interno de la tarjeta */
     text-align: center;
     /* Centra el texto dentro de la tarjeta */
-    background-color: rgb(222, 16, 140);
+    background-color: rgb(59, 178, 225);
     /* Color de fondo de la tarjeta */
+    border-radius: 20px;
 }
 
 /* Barra de búsqueda: contiene el input y el botón */
@@ -31,7 +32,7 @@ body {
     align-items: center;
     /* Centra verticalmente los elementos */
     justify-content: center;
-    /* Centra horizontalmente los elementos */
+    /* Centra horizontalmente los elementos */  
 }
 
 /* Estilo del campo de texto de la barra de búsqueda */
@@ -40,7 +41,7 @@ body {
     /* Sin borde */
     outline: none;
     /* Sin contorno al hacer foco */
-    background-color: antiquewhite;
+    background-color: rgb(241, 241, 58);
     /* Fondo claro para el input */
     color: grey;
     /* Color del texto */
@@ -73,6 +74,7 @@ body {
     /* Altura del botón */
     cursor: pointer;
     /* Cambia el cursor al pasar sobre el botón */
+    background-color: rgb(240, 240, 58);
 }
 
 .searchBar button img {
@@ -80,7 +82,7 @@ body {
 }
 
 .iconoClima {
-    width: 170px;
+    width: 310px;
     /* Ancho de los iconos del clima */
     margin-top: 30px;
 }
@@ -90,6 +92,7 @@ body {
     /* Tamaño de fuente del título */
     font-weight: 500;
     /* Margen superior del título */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .clima h2 {
@@ -101,7 +104,7 @@ body {
     /* Peso de la fuente */
     margin-top: -10px;
     /* Margen negativo para ajustar la posición */
-    color: red;
+    color: rgb(0, 0, 0);
 }
 
 .detalles {
@@ -123,6 +126,8 @@ body {
     align-items: center;
     /* Centra horizontalmente los elementos */
     text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 90%;
 }
 
 .col img {
@@ -137,6 +142,7 @@ body {
     /* Tamaño de fuente del valor del viento */
     margin-top: -10px;
     /* Margen negativo para ajustar la posición */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .humedadValor {
@@ -144,8 +150,27 @@ body {
     /* Tamaño de fuente del valor del viento */
     margin-top: -10px;
     /* Margen negativo para ajustar la posición */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .clima {
     display: none;
+}
+
+.conversor {
+    background: rgb(240, 240, 58);
+    color: #222;
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 20px 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.conversor input, .conversor button {
+    padding: 10px;
+    margin: 10px 5px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
 }

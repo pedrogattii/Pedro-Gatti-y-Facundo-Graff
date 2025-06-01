@@ -124,4 +124,19 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 }); // hola
 
+// Conversor de Celsius a Fahrenheit
+const celsiusInput = document.getElementById('celsiusInput');
+const convertirBtn = document.getElementById('convertirBtn');
+const resultadoConversor = document.getElementById('resultadoConversor');
+
+convertirBtn.addEventListener('click', () => {
+    const celsius = parseFloat(celsiusInput.value);
+    if (isNaN(celsius)) {
+        resultadoConversor.textContent = "Por favor, ingrese un valor válido.";
+    } else {
+        const fahrenheit = (celsius * 9 / 5) + 32;
+        resultadoConversor.textContent = `${celsius} °C = ${fahrenheit.toFixed(2)} °F`;
+    }
+});
+
 
