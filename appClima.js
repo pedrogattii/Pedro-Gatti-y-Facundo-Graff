@@ -139,4 +139,13 @@ convertirBtn.addEventListener('click', () => {
     }
 });
 
+// Lógica para pantalla de login estética
+const loginScreen = document.getElementById('loginScreen');
+const loginBtn = document.getElementById('loginBtn');
+
+loginBtn.addEventListener('click', () => {
+    // Oculta la pantalla de login y muestra la app
+    loginScreen.style.display = "none";
+});
+
 

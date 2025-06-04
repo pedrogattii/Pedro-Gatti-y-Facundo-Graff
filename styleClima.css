@@ -174,3 +174,54 @@ body {
     border: 1px solid #ccc;
     font-size: 16px;
 }
+
+/* Estilos para la pantalla de login */
+.login-screen {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(43,41,41,0.98);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.login-card {
+    background: rgb(240, 240, 58);
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    text-align: center;
+    min-width: 300px;
+}
+
+.login-card h2 {
+    margin-bottom: 20px;
+    color: #222;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.login-card input {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+#loginBtn {
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: none;
+    background: #222;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+#loginBtn:hover {
+    background: #444;
+}
