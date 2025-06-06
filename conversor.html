@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Conversor Celsius a Fahrenheit</title>
+    <link rel="stylesheet" href="styleClima.css">
+</head>
+<body>
+    <div class="conversor">
+        <h2>Conversor de Celsius a Fahrenheit</h2>
+        <input type="number" id="celsiusInput" placeholder="Grados Celsius">
+        <button id="convertirBtn">Convertir</button>
+        <p id="resultadoConversor"></p>
+        <a href="appClima.html">
+            <button id="volverBtn" style="margin-top:15px;">Volver a la app</button>
+        </a>
+    </div>
+    <script>
+        // Script para conversión
+        const celsiusInput = document.getElementById('celsiusInput');
+        const convertirBtn = document.getElementById('convertirBtn');
+        const resultadoConversor = document.getElementById('resultadoConversor');
+
+        convertirBtn.addEventListener('click', () => {
+            const celsius = parseFloat(celsiusInput.value);
+            if (isNaN(celsius)) {
+                resultadoConversor.textContent = "Por favor, ingrese un valor válido.";
+            } else {
+                const fahrenheit = (celsius * 9 / 5) + 32;
+                resultadoConversor.textContent = `${celsius} °C = ${fahrenheit.toFixed(2)} °F`;
+            }
+        });
+    </script>
+</body>
+</html>

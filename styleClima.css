@@ -225,3 +225,19 @@ body {
 #loginBtn:hover {
     background: #444;
 }
+
+.abrir-conversor-btn {
+    padding: 15px 30px;
+    border-radius: 15px;
+    border: none;
+    background: rgb(240, 240, 58);
+    color: #222;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: background 0.2s;
+}
+.abrir-conversor-btn:hover {
+    background: #ffe066;
+}
